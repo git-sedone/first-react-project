@@ -1,0 +1,60 @@
+.sharejoke-container {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    padding: 10px;
+    animation-name: open;
+    animation-duration: 4s;
+    top: 0;
+    position: absolute;
+    right: 0;
+    
+}
+
+.sharejoke-container small{
+    color: red;
+}
+
+
+
+h1 {
+    color: white;
+}
+
+.joke-line {
+    padding: 40px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    border-radius: 15px;
+    outline: none;
+}
+.joke-line:hover{
+    cursor: pointer;
+}
+
+.joke-punchline {
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 15px;
+    outline: none;
+}
+.joke-punchline:hover{
+    cursor: pointer;
+}
+
+.sharejoke-container button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    margin-top: 15px;
+    width: fit-content;
+    border-radius: 10px;
+    width: 50%;
+    align-self: center;
+    outline: none;
+    cursor: pointer;
+}
+.sharejoke-container small{
+    font-size: 20px;
+    color: darkred;
+}

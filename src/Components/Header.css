@@ -1,0 +1,53 @@
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+a{
+    font-size: 25px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    
+}
+
+a:hover{
+    background-color: gray;
+    border-bottom:red solid 2px;
+    cursor: pointer;
+
+}
+.overlay, 
+.register-overlay{
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    /* z-index: 1; */
+    left: 700px;
+    background-color: gray;
+    opacity:0.9;
+    animation-name: move;
+    animation-duration: 0.4s;
+    padding: 0px;
+    border-right: solid 5px white;
+    border-left: solid 5px white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+@keyframes move{
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.share-container,
+.register-overlay-container{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
