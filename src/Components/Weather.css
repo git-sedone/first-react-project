@@ -7,14 +7,13 @@
   justify-items: center;
   width: 20%;
   font-size: 20px;
-  /* background-color: pink; */
   color: white;
   min-height: 100vh;
   margin: auto;
   padding: 10px;
   border-radius: 30px;
-  /* height: 100%; */
 }
+
 
 h2 {
   font-size: 30px;
@@ -38,5 +37,20 @@ h2 {
   font-size: 20px;
   outline: none;
   border-radius: 10px;
-
 }
+  
+  @media screen and (max-width:375px){
+    .weather-container{
+      font-size: 10px;
+    }
+    .weather-container input{
+      font-size: 10px;
+      padding: 1px;
+    }
+    .weather-container button{
+      width: fit-content;
+    }
+    h1{
+      font-size: 10px;
+    }
+  }

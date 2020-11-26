@@ -11,6 +11,12 @@
     
 }
 
+@media screen and (max-width:1366px){
+    .sharejoke-container{
+       display: none;
+    }
+}
+
 .sharejoke-container small{
     color: red;
 }

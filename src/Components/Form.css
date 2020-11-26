@@ -8,6 +8,12 @@
     position: fixed;
     left: 600px;
 }
+@media screen and (max-width:1366px){
+    .form-container{
+        width: 300px;
+        margin-left: 170px;
+    }
+}
 .form-container h2{
     font-size: 30px;
 }
