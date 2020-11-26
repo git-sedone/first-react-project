@@ -13,8 +13,7 @@
 
 @media screen and (max-width:1366px){
     .sharejoke-container{
-        width: 300px;
-        margin-right: 40px;
+       display: none;
     }
 }
 
