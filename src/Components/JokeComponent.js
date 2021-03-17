@@ -7,7 +7,6 @@ class JokeComponent extends React.Component {
     super(props);
     this.state = {
       
-      // showJoke:false,
       jokeText: {},
       showAnswerButton: false,
       showSolution: false,
@@ -52,7 +51,11 @@ class JokeComponent extends React.Component {
   }
   closeJoke(){
     this.setState({
-      showJoke:false
+      showJoke:false,
+      jokeText:'',
+      showAnswerButton: false,
+      showSolution:''
+
 
     })
 

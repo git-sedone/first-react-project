@@ -30,6 +30,7 @@
   align-self: center;
   outline: none;
   cursor: pointer;
+  font-size: larger;
 }
 .get-weather-btn:hover{
   color: grey;
