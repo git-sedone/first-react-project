@@ -12,9 +12,16 @@ class Weather extends React.Component {
       temperature: '',
       city: '',
       error: '',
+      date: new Date()
     };
     this.weatherHandler = this.weatherHandler.bind(this);
     this.changeCity = this.changeCity.bind(this);
+  }
+
+  callMe(){
+    setInterval(()=>{
+      this.setState({date: new Date()});
+    }, 1000);
   }
 
   changeCity(event) {
@@ -58,7 +65,8 @@ class Weather extends React.Component {
       <div className="weather-container">
       
         <div className='date'>{currentDate}</div>
-        <h1>{currentTime}</h1>
+        <h1>{this.state.date.toLocaleTimeString()}</h1>
+        {this.callMe()}
         <input
           type="text"
           placeholder="insert city"

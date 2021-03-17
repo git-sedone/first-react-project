@@ -69,7 +69,7 @@ class JokeComponent extends React.Component {
         <div className='hamburger-menu'>
             <i className="fa fa-bars fa-3x" id="bars" onClick={this.openJoke}></i>
         </div>
-        <div className='joke-btn' onClick={this.openJoke}>Smile with Us</div>
+        <div className='joke-btn' onClick={this.openJoke}>Smile with Me</div>
         {this.state.showJoke ?
         
         <div className="joke-container">
