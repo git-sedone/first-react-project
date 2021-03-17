@@ -1,5 +1,5 @@
 .footer-container{
-    position: sticky;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -8,8 +8,7 @@
 }
 .footer-container p{
     color:#f0ffff;
-    padding: 3px;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 15px;
 }
 
