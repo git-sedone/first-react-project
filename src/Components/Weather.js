@@ -56,8 +56,8 @@ class Weather extends React.Component {
     };
     return (
       <div className="weather-container">
-        <h1>Current Location is: London, UK</h1>
-        <h1>{currentDate}</h1>
+      
+        <div className='date'>{currentDate}</div>
         <h1>{currentTime}</h1>
         <input
           type="text"
@@ -66,9 +66,9 @@ class Weather extends React.Component {
           onChange={this.changeCity}
         />
         <small style={style}>{this.state.error}</small>
-        <button onClick={this.weatherHandler}>get weather</button>
-        <h2>{this.state.weather}</h2>
-        <h2>{this.state.temperature}</h2>
+        <button onClick={this.weatherHandler} className='get-weather-btn'>get weather</button>
+        <h2 className='weather'>{this.state.weather}</h2>
+        <h2 className='temperature'>{this.state.temperature}</h2>
       </div>
     );
   }

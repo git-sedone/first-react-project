@@ -1,17 +1,11 @@
 
 body {
-  background-image: url(./img/federico-di-dio-PezGp3Zq690-unsplash.jpg);
-  background-size: 100% 100%;
-  margin: 0;
-  overflow: hidden;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/jonathan-borba-yvWdikF2MyE-unsplash.jpg);
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-
-@media screen and (max-width:375px){
-  body{
-      background-size: cover;
-  }
-}
 
 
 

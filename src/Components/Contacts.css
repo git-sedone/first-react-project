@@ -1,0 +1,26 @@
+.contacts-bar{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+.contacts-bar ul{
+    list-style: none;
+}
+.contacts-bar li a i{
+    padding: 50px;
+    font-size: 50px;
+}
+.contacts-bar li a i:hover{
+    color: teal;
+}
+@media(max-width:590px){
+    .contacts-bar ul{
+        display: flex;
+        flex-direction: row;
+    }
+    .contacts-bar li a i{
+        padding: 10px;
+    }
+}

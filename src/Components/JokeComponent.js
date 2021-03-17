@@ -1,15 +1,6 @@
 import React from 'react';
 import './JokeComponent.css';
 
-/**
- * INDIVIDUAL COMMITS FOR EVERY WORK
- * close button to the right...............x
- * default location in home page............x
- * validation message font color change everywhere.......x
- * spacing between registration fields..............x
- * Clean data in joke & punchline upon submission.....x
- * 
- */
 
 class JokeComponent extends React.Component {
   constructor(props) {
@@ -72,23 +63,25 @@ class JokeComponent extends React.Component {
 
     return (
       <div>
-        <button className='joke-btn' onClick={this.openJoke}>Play with Us</button>
-
+        <div className='hamburger-menu'>
+            <i className="fa fa-bars fa-3x" id="bars" onClick={this.openJoke}></i>
+        </div>
+        <div className='joke-btn' onClick={this.openJoke}>Smile with Us</div>
         {this.state.showJoke ?
         
-        <div className="joke-container" style = {{width:'350px'}}>
+        <div className="joke-container">
           <i className="fa fa-times fa-3x" onClick={this.closeJoke}></i>
           <h1>Start the day with a Laugh</h1>
-          <button onClick={this.randomJokeHandler}>Get Joke</button>
+          <button className='get-joke-btn' onClick={this.randomJokeHandler}>Get Joke</button>
           <h1>{this.state.jokeText.setup}</h1>{' '}
           {this.state.showAnswerButton === true ? (
-            <div>
-              <button onClick={this.answerClickHandler}>check Punchline</button>
+            <div className='punch-container'>
+              <button className='get-punch-btn' onClick={this.answerClickHandler}>check Punchline</button>
             
             </div>
           ) : null}
           {this.state.showSolution === true ? (
-            <h2>{this.state.jokeText.punchline}</h2>
+            <h1>{this.state.jokeText.punchline}</h1>
           ) : null}
         </div>
         : null

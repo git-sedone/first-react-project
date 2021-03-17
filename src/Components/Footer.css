@@ -3,11 +3,12 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: white;
     text-align: center;
 }
 .footer-container p{
-    color:grey;
+    color:#f0ffff;
     padding: 3px;
     font-weight: bolder;
+    font-size: 20px;
 }
+
