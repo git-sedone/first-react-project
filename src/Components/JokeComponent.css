@@ -4,16 +4,25 @@
     text-align: center;
     color: white;
     height: 100%;
-    width:0;
+    width:80%;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: gray;
+    background-color:#2f4f4f;
     opacity: 0.9;
     overflow-x: hidden;
     padding-top: 90px;
-    border-right: solid 5px white;
+    animation-name: open-joke;
+    animation-duration: 2s;
+}
+@keyframes open-joke{
+    from{
+        transform: translateX(-60%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
 
 
@@ -56,32 +65,47 @@ input {
     margin-top:40px;
 }
 .joke-btn{
-    
-    background-color:rgba(0, 0, 0, 0.1);
-    padding: 18px;
+    margin-top: 1rem;
+    margin-left: 1rem;
     color:white;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bolder;
     outline:none;
     position: fixed;
     top: 0;
     left: 0;
 }
-@media screen and (max-width:375px){
-    .joke-btn{
-        display: block;
-        top: 45px;
-        padding: 2px;
-        margin-top: 2px;
-        margin-left: 10px;
-    }
-  }
-.joke-btn:hover{
-    background-color: gray;
-    border-bottom: solid red 2px;
+.joke-container 
+.get-joke-btn, 
+.punch-container
+.get-punch-btn{
+    width: 10rem;
     cursor: pointer;
 }
+.joke-btn:hover{
+    border-bottom: solid white 2px;
+    cursor: pointer;
+}
+.hamburger-menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    color: white;
+}
 
-
+@media(max-width:590px){
+    .joke-btn{
+        display: none;
+    }
+    .hamburger-menu{
+        display: block;
+    }
+    .joke-container h1{
+        font-size: 20px;
+    }
+}
 
 
