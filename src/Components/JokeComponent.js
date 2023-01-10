@@ -30,18 +30,19 @@ class JokeComponent extends React.Component {
   }
 
   randomJokeHandler(event) {
-    fetch('https://twittezer.herokuapp.com/')
+    fetch('https://official-joke-api.appspot.com/random_joke')
       .then((res) => res.json())
-      .then((responseData) => {
-        const { data } = responseData;
-        const randomJokeObject = data[Math.floor(Math.random() * data.length)];
+      .then((data) => {
+        console.log(data.setup, ':', data.punchline);
 
-        this.setState({
-          jokeText: randomJokeObject.joke_text,
-          jokePunchLine: randomJokeObject.joke_punchline,
+        const newState = {
+          jokeText: data.setup,
+          jokePunchLine: data.punchline,
           showAnswerButton: true,
-          showSolution: ' ',
-        });
+          showSolution: '',
+        };
+
+        this.setState(newState);
       });
   }
   openJoke() {
