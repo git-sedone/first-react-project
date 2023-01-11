@@ -1,111 +1,104 @@
 .joke-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    color: white;
-    height: 100%;
-    width:80%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color:#2f4f4f;
-    opacity: 0.9;
-    overflow-x: hidden;
-    padding-top: 90px;
-    animation-name: open-joke;
-    animation-duration: 2s;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2f4f4f;
+  opacity: 0.9;
+  overflow-x: hidden;
+  padding-top: 90px;
+  animation-name: open-joke;
+  animation-duration: 2s;
 }
-@keyframes open-joke{
-    from{
-        transform: translateX(-60%);
-    }
-    to{
-        transform: translateX(0%);
-    }
-}
-
-
-
-.joke-container .fa-times{
-    text-align: right;
-    padding-right: 10px;
-    padding-bottom: 50px;
-    margin-top: -70px;
-    cursor: pointer;
-}
-.joke-close{
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    width: 0;
-}
-i{
-    color: white;
-    font-size: larger;
+@keyframes open-joke {
+  from {
+    transform: translateX(-60%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
 
+.joke-container .fa-times {
+  text-align: right;
+  padding-right: 10px;
+  padding-bottom: 50px;
+  margin-top: -70px;
+  cursor: pointer;
+}
+.joke-close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  width: 0;
+}
+i {
+  color: white;
+  font-size: larger;
+}
 
 .joke-container button {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px;
-    margin-top: 15px;
-    width: fit-content;
-    border-radius: 10px;
-    width: 50%;
-    align-self: center;
-    outline: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  margin-top: 15px;
+  width: fit-content;
+  border-radius: 10px;
+  width: 50%;
+  align-self: center;
+  outline: none;
 }
 
 input {
-    outline: none;
-    margin-top:40px;
+  outline: none;
+  margin-top: 40px;
 }
-.joke-btn{
-    margin-top: 1rem;
-    margin-left: 1rem;
-    color:white;
-    font-size: 30px;
-    font-weight: bolder;
-    outline:none;
-    position: fixed;
-    top: 0;
-    left: 0;
+.joke-btn {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  outline: none;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
-.joke-container 
-.get-joke-btn, 
-.punch-container
-.get-punch-btn{
-    width: 10rem;
-    cursor: pointer;
+.joke-container .get-joke-btn,
+.punch-container .get-punch-btn {
+  width: 10rem;
+  cursor: pointer;
 }
-.joke-btn:hover{
-    border-bottom: solid white 2px;
-    cursor: pointer;
+.joke-btn:hover {
+  border-bottom: solid white 2px;
+  cursor: pointer;
 }
-.hamburger-menu{
+.hamburger-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+@media (max-width: 590px) {
+  .joke-btn {
     display: none;
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 1rem;
-    margin-left: 1rem;
-    color: white;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+  .joke-container h1 {
+    font-size: 20px;
+  }
 }
-
-@media(max-width:590px){
-    .joke-btn{
-        display: none;
-    }
-    .hamburger-menu{
-        display: block;
-    }
-    .joke-container h1{
-        font-size: 20px;
-    }
-}
-
-
